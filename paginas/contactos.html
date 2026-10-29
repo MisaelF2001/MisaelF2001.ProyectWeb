@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Mente Clara</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/index.html" class="logo">
+        <span class="logo-icon">🧠</span>
+        Mente Clara
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav">
+        <a href="/index.html">Inicio</a>
+        <a href="/paginas/informate.html">Infórmate</a>
+        <a href="/paginas/mitos.html">Mitos</a>
+        <a href="/paginas/quiz.html">Quiz</a>
+        <a href="/paginas/recursos.html">Recursos</a>
+        <a href="/paginas/contactos.html">Contacto</a>
+        <a href="/paginas/nosotros.html">Nosotros</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <div class="text-center">
+          <span class="badge">Consulta opcionalmente anónima</span>
+          <h1 class="section-title">Contacto</h1>
+          <p class="section-subtitle">
+            ¿Tienes dudas, sugerencias o quieres orientación?
+            Escríbenos. El nombre es opcional.
+          </p>
+        </div>
+
+        <!-- FORMULARIO -->
+        <div class="form-card">
+          <form id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label for="nombre">Nombre (opcional)</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Tu nombre o déjalo en blanco"
+                autocomplete="name"
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="tu@correo.com"
+                required
+                autocomplete="email"
+              >
+              <div id="email-error" class="form-error"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="consulta">Consulta general</option>
+                <option value="recursos">Sobre recursos de ayuda</option>
+                <option value="sugerencia">Sugerencia para el sitio</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje *</label>
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="5"
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+              <div id="mensaje-error" class="form-error"></div>
+            </div>
+
+            <button type="submit" class="btn btn-green form-button">
+              Enviar consulta
+            </button>
+
+            <p class="form-note">
+              * Campos obligatorios. En este prototipo el envío es
+              simulado y los datos no se guardan en un servidor.
+            </p>
+
+          </form>
+
+          <!-- MENSAJE DE CONFIRMACION -->
+          <div id="formSuccess" class="form-success">
+            <div class="icon">✅</div>
+            <h3>¡Mensaje enviado!</h3>
+            <p class="dynamic-msg">
+              Gracias, recibimos tu mensaje.
+            </p>
+            <a href="index.html" class="btn btn-green">
+              Volver al inicio
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PAGINA -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <h4>Mente Clara</h4>
+          <p>
+            Proyecto educativo de prevención del consumo de
+            sustancias controladas.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navegación</h4>
+          <a href="informate.html">Infórmate</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="recursos.html">Recursos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div>
+          <h4>Proyecto</h4>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="mitos.html">Mitos vs Realidad</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        Mente Clara · Prevención del consumo de sustancias ·
+        Proyecto Integrador 2026
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

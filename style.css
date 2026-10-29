@@ -1,0 +1,179 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8faf5;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #1b4332;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+
+.header {
+  background-color: white;
+  box-shadow: 0 2px 5px #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  max-width: 1140px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2d6a4f;
+}
+
+.logo-icon {
+  background-color: #2d6a4f;
+  color: white;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav a {
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #1b4332;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: #d8f3dc;
+  color: #2d6a4f;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: #2d6a4f;
+  border-radius: 2px;
+}
+
+
+
+
+
+/* PIE DE PAGINA */
+
+.footer {
+  background-color: #1b4332;
+  color: white;
+  padding: 35px 0 20px;
+  margin-top: auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  display: block;
+  padding: 4px 0;
+  color: #ddd;
+}
+
+.footer a:hover {
+  color: #95d5b2;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+  border-top: 1px solid #456;
+  text-align: center;
+  color: #ccc;
+  font-size: 14px;
+}
+
+
